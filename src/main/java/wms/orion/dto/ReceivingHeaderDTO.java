@@ -1,0 +1,13 @@
+package wms.orion.dto;
+
+import wms.orion.dto.recebimento.ReceivingLineDTO;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+public record ReceivingHeaderDTO(
+        String numeroNotaFiscal,
+        LocalDateTime dataChegada,
+        String fornecedorCnpj,
+        List<ReceivingLineDTO> lines) {
+}

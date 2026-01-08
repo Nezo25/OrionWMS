@@ -1,4 +1,4 @@
-package wms.orion.dto.recebimento;
+package wms.orion.dto.inboundDTO.recebimento;
 
 public record ReceivingLineDTO(
         String sku,

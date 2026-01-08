@@ -1,4 +1,4 @@
-package wms.orion.services.armazenagem;
+package wms.orion.services.inboud.armazenagem;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

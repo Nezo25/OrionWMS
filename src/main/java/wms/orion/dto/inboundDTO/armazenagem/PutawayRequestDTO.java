@@ -1,4 +1,4 @@
-package wms.orion.dto.armazenagem;
+package wms.orion.dto.inboundDTO.armazenagem;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;

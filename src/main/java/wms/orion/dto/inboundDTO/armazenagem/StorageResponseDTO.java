@@ -1,4 +1,4 @@
-package wms.orion.dto.armazenagem;
+package wms.orion.dto.inboundDTO.armazenagem;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

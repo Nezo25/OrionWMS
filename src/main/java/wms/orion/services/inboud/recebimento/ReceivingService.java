@@ -1,4 +1,4 @@
-package wms.orion.services.recebimento;
+package wms.orion.services.inboud.recebimento;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

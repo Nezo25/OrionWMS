@@ -4,10 +4,10 @@ import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import wms.orion.dto.armazenagem.PutawayRequestDTO;
-import wms.orion.dto.armazenagem.StorageResponseDTO;
+import wms.orion.dto.inboundDTO.armazenagem.PutawayRequestDTO;
+import wms.orion.dto.inboundDTO.armazenagem.StorageResponseDTO;
 import wms.orion.models.inventory.WarehouseInventory;
-import wms.orion.services.armazenagem.StorageService;
+import wms.orion.services.inboud.armazenagem.StorageService;
 
 @RestController
 @RequestMapping("/api/wms/storage")

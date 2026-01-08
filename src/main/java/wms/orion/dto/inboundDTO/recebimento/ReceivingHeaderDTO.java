@@ -1,6 +1,4 @@
-package wms.orion.dto;
-
-import wms.orion.dto.recebimento.ReceivingLineDTO;
+package wms.orion.dto.inboundDTO.recebimento;
 
 import java.time.LocalDateTime;
 import java.util.List;

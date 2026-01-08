@@ -3,13 +3,13 @@ package wms.orion.controllers;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import wms.orion.dto.ReceivingHeaderDTO;
-import wms.orion.dto.recebimento.ConferenciaDTO;
+import wms.orion.dto.inboundDTO.recebimento.ReceivingHeaderDTO;
+import wms.orion.dto.inboundDTO.recebimento.ConferenciaDTO;
 import wms.orion.models.inbound.recebimento.ReceivingHeader;
 import wms.orion.models.inbound.recebimento.ReceivingLine;
 import wms.orion.models.inventory.WarehouseInventory;
 import wms.orion.models.repositories.InventoryRepository; // Certifique-se deste import
-import wms.orion.services.recebimento.ReceivingService;
+import wms.orion.services.inboud.recebimento.ReceivingService;
 
 import java.util.List;
 import java.util.Map;

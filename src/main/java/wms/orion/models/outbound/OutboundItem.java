@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import wms.orion.models.client.User;
 
 @Entity
 @Getter
@@ -13,6 +14,9 @@ public class OutboundItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
     @JsonBackReference
     @ManyToOne

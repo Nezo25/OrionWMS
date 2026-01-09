@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import wms.orion.models.client.User;
 import wms.orion.models.enums.StatusRecebimento;
 
 import java.time.LocalDateTime;
@@ -17,6 +18,9 @@ public class ReceivingHeader {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
     // Chave de acesso da NF (garante que é única)
     @Column(name = "numero_nota_fiscal", unique = true, nullable = false)
     private String numeroNotaFiscal;

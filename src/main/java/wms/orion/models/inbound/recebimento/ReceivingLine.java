@@ -3,6 +3,7 @@
     import com.fasterxml.jackson.annotation.JsonBackReference;
     import lombok.Getter;
     import lombok.Setter;
+    import wms.orion.models.client.User;
     import wms.orion.models.enums.StatusRecebimento;
     import jakarta.persistence.*;
 
@@ -15,6 +16,9 @@
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
+        @ManyToOne
+        @JoinColumn(name = "user_id")
+        private User user;
         @ManyToOne
         @JsonBackReference
         @JoinColumn(name = "header_id", nullable = false)

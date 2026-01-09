@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import wms.orion.models.client.User;
 import wms.orion.models.enums.OutboundStatus;
 
 import java.util.List;
@@ -15,9 +16,14 @@ import java.util.List;
 public class OutboundOrder {
 
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
     private String orderNumber;
 
     @Enumerated(EnumType.STRING)

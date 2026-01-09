@@ -2,8 +2,8 @@ package wms.orion.models.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import wms.orion.models.outbound.OutboundOrder;
+import wms.orion.models.security.Role;
 
 @Repository
-public interface OutboundOrderRepository extends JpaRepository<OutboundOrder, Long> {
+public interface RoleRepository extends JpaRepository <Role , Long> {
 }
